@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head> 
-  <meta charset="UTF-8"
-  <title></title>
-  <link rel="stylesheet" href="css/main.css">
-  <style>
-      body {
-          color: #fdfefd;
-          background-color: #595f96;
-      }
-  </style>
-<script src="js/email.js"></script>
+
+<head>
+    <title>Projeto Labenu</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
+
 <body>
+    <header class="topo">
+        <h1>Projeto Seletivo Labenu</h1>
+    </header>
 
-    <div id="cabecalho">
-    
-        <p><span style="color: white;"> Projeto Seletivo Labenu</span></p>
-    </div>
+    <main class="corpo">
 
-    <div class="logo"
-       <figure>
-        <img src="img/logo.png" width="500px" height="220px">
-       </figure>
-    </div>
+        <figure><img src="img/logo.png" id="imgLogo" alt=""></figure>
 
-
-    <div id="mobile"
-       
-        <p>Mobile<br>Frontend</p>
-      
-    </div>
-
-
-    <div id="data"
-        <p>Data<br>Science</p>
-
-    </div>
-
-    <div id="web"
-        <p>Web<br>Full Stack</p>
-
-    </div>
-
-    <div id="turmas"
+        <div class="blocos">
+            <div class="bloco1">Web<br>Full Stack</div>
+            <div class="bloco2">Mobile<br>Frontend</div>
+            <div class="bloco3">Data<br>Science</div>
+        </div>
+        
         <p>Turmas de 2020</p>
-    </div>
-
-    <div id="rodape"
+        
+    </main>
     
-    </div>
+    <footer class="rodape">
+        
+        <form action="" class="form">
+            <input type="text" id="idemail" name="email" onblur="validaEmail(form.email)"
+            placeholder="Coloque seu e-mail para contato! :)">
+            <input type="submit" value="ENVIAR">
+        </form>
+        <p id="exibemsg"></p>
+        
+    </footer>
 
-    <div id="coloque">
-        <form name="form1">
-            <input type="email" id="emailid" placeholder="Coloque seu e-mail para contato! :)" onblur="checarEmail();" name="email" maxlength="60" size="65" required>
-            <button type="button" onclick="Email();">ENVIAR</button>
-        </form>   
-    </div>
+
 </body>
+<script src="js/index.js"></script>
+
 </html>
